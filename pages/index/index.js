@@ -33,7 +33,6 @@ Page({
 
   // 显示文本输入框
   showInput: function (e) {
-    console.log('e', e)
     if (this.data.isHide === false) {
       return
     }
@@ -88,7 +87,7 @@ Page({
       name: 'image',
       success(res) {
         const data = res.data
-        that.addNode({ name: 'img', filePath })
+        that.addNode({ name: 'img', filePath }) // firePath--后端返回的图片路径，本地临时路径在真机调试上不能正常显示
       },
       fail(err) {
         console.log('fail', err)
