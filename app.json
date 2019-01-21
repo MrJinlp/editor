@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+ "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "图文编辑器",
+    "navigationBarBackgroundColor": "#f0514e",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": true
+  }
+}

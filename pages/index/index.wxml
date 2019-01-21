@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='form-item bgcolor-white'>
+      <label class="title-font-size">内容描述 </label>
+      <scroll-view scroll-y class='rich-text-container'>
+        <rich-text bindtap='del' space='emsp' nodes="{{content}}"></rich-text>
+      </scroll-view>
+      <view class='image-container'>
+        <view class='icon-container' bindtap='showInput'>
+          <icon class='iconfont icon-text' data-type='text'></icon>
+        </view>
+        <view class='icon-container' bindtap='addPhoto'>
+          <icon class='iconfont icon-picture' data-type='photo'></icon>
+        </view>
+        <view class='icon-container' bindtap='reset'>
+          <icon class='iconfont icon-reset-o' data-type='reset'></icon>
+        </view>
+        <view class='icon-container' bindtap='isClear'>
+          <icon class='iconfont icon-delete' data-type='clear'></icon>
+        </view>
+      </view>
+      <view class='text-input' hidden="{{isHide}}">
+        <textarea value='{{value}}' placeholder='请输入您想发表的内容' bindconfirm='textConfirm' ></textarea>
+      </view>
+    </view>
+</view>
